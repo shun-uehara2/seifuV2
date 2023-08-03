@@ -37,32 +37,32 @@ function calculateAccuracy(correctCount, totalCount) {
 }
 
 function generateNumbers() {
-  var num1 = Math.floor(Math.random() * 21) - 10;
-  var num2 = Math.floor(Math.random() * 21) - 10;
+  var num1 = Math.floor(Math.random() * 11);
+  var num2 = Math.floor(Math.random() * 11);
 
   document.getElementById('numbers').innerHTML = num1 + " + " + num2 + " = ?";
-  correctAdditionAnswer = Math.abs(num1 + num2);
+  correctAdditionAnswer = num1 + num2;
 }
 
 function generateSubtractionNumbers() {
-  var num1 = Math.floor(Math.random() * 21) - 10;
-  var num2 = Math.floor(Math.random() * 21) - 10;
+  var num1 = Math.floor(Math.random() * 11);
+  var num2 = Math.floor(Math.random() * 11);
 
   document.getElementById('subtractionNumbers').innerHTML = num1 + " - " + num2 + " = ?";
   correctSubtractionAnswer = Math.abs(num1 - num2);
 }
 
 function generateMultiplicationNumbers() {
-  var num1 = Math.floor(Math.random() * 5) - 2;
-  var num2 = Math.floor(Math.random() * 5) - 2;
+  var num1 = Math.floor(Math.random() * 5);
+  var num2 = Math.floor(Math.random() * 5);
 
   document.getElementById('multiplicationNumbers').innerHTML = num1 + " × " + num2 + " = ?";
-  correctMultiplicationAnswer = Math.abs(num1 * num2);
+  correctMultiplicationAnswer = num1 * num2;
 }
 
 function checkAdditionAnswer(userAnswer) {
   if (parseInt(userAnswer) === correctAdditionAnswer) {
-    document.getElementById('additionResult').innerHTML = "正解です　！";
+    document.getElementById('additionResult').innerHTML = "正解です！";
     correctAdditionCount++;
   } else {
     document.getElementById('additionResult').innerHTML = "不正解です。正解は " + correctAdditionAnswer + " でした。";
