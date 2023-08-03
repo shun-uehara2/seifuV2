@@ -49,7 +49,7 @@
             </div>
 
             <div class="mb-6 space-y-2 bg-purple-200 p-4 rounded shadow-lg">
-              <h2 class="text-lg sm:text-xl font-semibold">乗算問題</h2>
+              <h2 class="text-lg sm:text-xl font-semibold">乗算 問題</h2>
               <p id="multiplicationNumbers" class="p-4 bg-gray-100 rounded shadow"></p>
               <div class="flex justify-center gap-5 flex-wrap">
                 <button onclick="checkMultiplicationAnswer('1')" class="w-10 h-10 flex items-center justify-center bg-purple-500 text-white rounded-full shadow">1</button>
