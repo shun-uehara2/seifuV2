@@ -91,7 +91,7 @@ function checkMultiplicationAnswer(userAnswer) {
     document.getElementById('multiplicationResult').innerHTML = "正解です！";
     correctMultiplicationCount++;
   } else {
-    document.getElementById('multiplicationResult').innerHTML = "不正解です。正解は " + correctMultiplicationAnswer + " でした。";
+    document.getElementById('multiplicationResult').innerHTML = "不正解です。正解は " + correctMultiplicationAnswer + " でした。　";
     wrongMultiplicationCount++;
   }
   setTimeout(() => document.getElementById('multiplicationResult').innerHTML = "", 2000);
