@@ -62,7 +62,7 @@ function generateMultiplicationNumbers() {
 
 function checkAdditionAnswer(userAnswer) {
   if (parseInt(userAnswer) === correctAdditionAnswer) {
-    document.getElementById('additionResult').innerHTML = "正解です！";
+    document.getElementById('additionResult').innerHTML = "正解です　！";
     correctAdditionCount++;
   } else {
     document.getElementById('additionResult').innerHTML = "不正解です。正解は " + correctAdditionAnswer + " でした。";
